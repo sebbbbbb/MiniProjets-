@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="CategoryViewController" customModule="SPHierachy" customModuleProvider="target">
+            <connections>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="taL-aU-LfY">
+                    <rect key="frame" x="20" y="40" width="335" height="30"/>
+                    <state key="normal" title="Enfant"/>
+                    <connections>
+                        <action selector="didTapKid" destination="-1" eventType="touchUpInside" id="Kgj-NZ-Krm"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KDE-Li-B8n">
+                    <rect key="frame" x="20" y="90" width="335" height="30"/>
+                    <state key="normal" title="Pas Enfant"/>
+                    <connections>
+                        <action selector="didTapAdult" destination="-1" eventType="touchUpInside" id="GAB-zt-kaf"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="KDE-Li-B8n" firstAttribute="top" secondItem="taL-aU-LfY" secondAttribute="bottom" constant="20" id="4mk-8g-K9g"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="taL-aU-LfY" secondAttribute="trailing" constant="20" id="6FD-LU-ZNZ"/>
+                <constraint firstItem="taL-aU-LfY" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="20" id="8bF-Dd-oj1"/>
+                <constraint firstItem="KDE-Li-B8n" firstAttribute="trailing" secondItem="taL-aU-LfY" secondAttribute="trailing" id="SSr-1u-fSH"/>
+                <constraint firstItem="taL-aU-LfY" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="20" id="Xjg-WL-Btx"/>
+                <constraint firstItem="KDE-Li-B8n" firstAttribute="leading" secondItem="taL-aU-LfY" secondAttribute="leading" id="ZTS-Gj-8uq"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+        </view>
+    </objects>
+</document>
